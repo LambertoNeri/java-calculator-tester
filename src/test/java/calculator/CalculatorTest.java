@@ -25,7 +25,6 @@ class CalculatorTest {
                     Calculator.floatDivide(1,0);
                 });
         assertEquals(1, Calculator.floatDivide(2, 2));
-
     }
 
     @Test

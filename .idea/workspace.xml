@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cc5c32-9394-4778-b883-87a999119dd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/DivideBy0Exception.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/EmptyNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/calculator/CalculatorTest.java" afterDir="false" />
+    <list default="true" id="b2cc5c32-9394-4778-b883-87a999119dd1" name="Changes" comment="push exercise fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainTicket/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/trainTicket/exception/NegativeNumberException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/trainTicket/TicketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/calculators/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/DivideBy0Exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/exceptions/DivideBy0Exception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/EmptyNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/exceptions/EmptyNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/InvalidNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/exceptions/InvalidNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +24,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LambertoNeri"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="eb8fa776-72dd-43db-9f7a-4586738ccbdf" />
+        <option name="url" value="https://github.com/LambertoNeri/java-calculator-tester.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
@@ -55,36 +70,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="calculator" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="trainTicket" />
       <recent name="calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.floatDivide">
+  <component name="RunManager" selected="JUnit.TicketTest.priceCalculator">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <option name="MAIN_CLASS_NAME" value="calculator.Main" />
       <module name="java-calculator-tester" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="calculator.calculators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.floatAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-calculator-tester" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="calculator" />
-      <option name="MAIN_CLASS_NAME" value="calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="floatAdd" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,7 +96,7 @@
       <module name="java-calculator-tester" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calculator.*" />
+          <option name="PATTERN" value="calculator.calculators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +112,7 @@
       <module name="java-calculator-tester" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calculator.*" />
+          <option name="PATTERN" value="calculator.calculators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,7 +128,7 @@
       <module name="java-calculator-tester" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calculator.*" />
+          <option name="PATTERN" value="calculator.calculators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketTest.priceCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-calculator-tester" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trainTicket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trainTicket" />
+      <option name="MAIN_CLASS_NAME" value="trainTicket.TicketTest" />
+      <option name="METHOD_NAME" value="priceCalculator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketTest.priceCalculator" />
         <item itemvalue="JUnit.CalculatorTest.floatDivide" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CalculatorTest.floatMultiply" />
         <item itemvalue="JUnit.CalculatorTest.floatSubtract" />
-        <item itemvalue="JUnit.CalculatorTest.floatAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -156,13 +175,35 @@
       <option name="presentableId" value="Default" />
       <updated>1699276245159</updated>
     </task>
+    <task id="LOCAL-00001" summary="pussh exercise">
+      <option name="closed" value="true" />
+      <created>1699282583031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699282583031</updated>
+    </task>
+    <task id="LOCAL-00002" summary="push exercise fix">
+      <option name="closed" value="true" />
+      <created>1699282801514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699282801515</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pussh exercise" />
+    <MESSAGE value="push exercise fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="push exercise fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/main/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/calculator/Main.java</url>
           <line>3</line>
           <properties class="main.Main" method="main">
             <option name="EMULATED" value="true" />

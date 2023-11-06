@@ -1,6 +1,7 @@
 package calculator;
 
-import exceptions.DivideBy0Exception;
+import calculator.calculators.Calculator;
+import calculator.exceptions.DivideBy0Exception;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

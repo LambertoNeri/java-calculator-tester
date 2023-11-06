@@ -1,6 +1,6 @@
-package calculator;
+package calculator.calculators;
 
-import exceptions.DivideBy0Exception;
+import calculator.exceptions.DivideBy0Exception;
 
 public interface Calculator {
     // VALORI
